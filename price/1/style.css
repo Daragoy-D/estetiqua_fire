@@ -1,0 +1,918 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	background-attachment: fixed;
+	background-color: #edeef0;
+	width: 100%;
+	height: 100%;
+}
+
+
+a{
+	text-decoration: none;
+	font-family: sans-serif !important;
+}
+p{
+	font-family: sans-serif !important;
+}
+
+div{
+	font-family: sans-serif !important;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.96);
+    z-index: 100500;
+	overflow:  hidden;
+}
+
+#loading .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 45%;
+    top: 47%;
+}
+
+.up_panel{
+	height: 100%;
+	width: 120px;
+	position: fixed;
+	left: 0;
+	top: 90px;
+	visibility: hidden;
+	z-index: 100400;
+}
+
+.up_panel a{
+	display: block;
+	height: 100%;
+}
+
+#up_panel{
+	background: rgba(0, 0, 0, 0.04);
+	transition: background 0.5s;
+}
+
+#up_img{
+    opacity: 0.1;
+    position: absolute;
+    left: 25px;
+    top: 19px;
+    transition: opacity 0.5s;
+    height: 20px;
+}
+
+#up_panel:hover{background: rgba(0, 0, 0, 0.1);}
+#up_panel:hover #up_img {opacity: 0.3;}
+#up_panel:hover #vv {opacity: 0.3;}
+
+#vv{
+	opacity: 0.1;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font: 15px 'Myriad Pro';
+	transition: opacity 0.5s;
+}
+
+
+
+.white{
+	color: white;
+}
+
+.header_text{
+	font: 33px/29px 'Myriad Pro';
+    padding-top: 10px;
+}
+
+.footer{
+    width: 960px;
+    margin: 0 auto;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    font: 16px 'Myriad Pro';
+    color: #000000;
+    padding: 15px 0 0 0;
+    margin-top: 18px;
+}
+
+#header{
+	width: 100%;
+	height: 90px;
+	background-color: #32174d;
+	position: fixed;
+	z-index: 100500;
+	opacity: 1;
+	transition: opacity 1s;
+	box-shadow: 0 2px 7px rgba(0,0,0,0.8);
+}
+
+#header:hover{opacity:1;}
+
+#head_rect{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+
+#head_rect a{
+	display: block;
+	height: 100%;
+}
+
+#head_logo{
+    height: 70px;
+    width: 330px;
+    z-index: 100500;
+    margin: auto;
+    margin-top: 9px;
+}
+
+#pegasus{
+    height: 65px;
+    width: 75px;
+    transition: all 1s;
+	transform-style: preserve-3d;
+    background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+    margin: 10px;
+}
+
+#pegasus:hover{
+    background-image: url(img/home.png);
+	transform: rotateY(180deg); 
+}
+
+.content{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	padding-top: 105px;
+}
+
+#club_projects{
+	width: 100%;
+    height: 100%;
+}
+
+#event_projects{
+	width: 380px;
+	height: 100%;
+}
+
+#head_titles{
+	font: 24px 'Myriad Pro';
+	color: #32174d;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.atcoin{
+	height: 216px;
+    width: 99%;
+    margin-bottom: 18px;
+    background-color: #ffffff;
+}
+
+.novelty{
+	height: 200px;
+	width: 99%;
+	padding-bottom: 18px;
+}
+
+.estetIQua_projects{
+	height: 235px;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.title_rect{
+	width: 100%;
+	height: 55px;
+	background-color: #fbfafc;
+	border-bottom: 1px solid #e7e8ec;
+}
+
+.content_rect{
+	width: 100%;
+	height: 199px;
+	background-color: #ffffff;
+}
+
+.title_text{
+	font: 21px 'Myriad Pro';
+    color: #000000;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.projects_logo{
+	height: 120px;
+    width: 120px;
+    float: left;
+    padding: 20px;
+}
+
+.projects_logo_2{
+	height: 120px;
+	width: 120px;
+	float: none;
+}
+
+.projects_link{
+    font: 16px 'Myriad Pro';
+    color: #622a85;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.projects_link_2{
+    font: 13px 'Myriad Pro';
+    color: #622a85;
+    font-weight: bold;
+    display: block;
+}
+
+.projects_title{
+	font: 15px 'Myriad Pro';
+	color: #656565;
+}
+
+.projects_title_2{
+	font: 13px 'Myriad Pro';
+	color: #ff0000;
+	font-weight: 700;
+}
+
+
+
+.column{
+	display: flex;
+}
+
+.column_EP{
+    width: 176px;
+    margin-left: 10px;
+    text-align: center;
+    cursor:  pointer;
+}
+
+
+.column_PR{
+	width: 167px;
+    text-align: left;
+	padding-top: 10px;
+    margin-right: 12px;
+}
+
+.horisontal_line{
+	border-bottom: 1px solid #e7e8ec;
+}
+
+.other_projects{
+	height: 260px;
+}
+
+.padd_l_20{
+	padding-left: 20px;
+}
+
+.padd_t_8{
+	padding-top: 8px;
+}
+
+.height_85{
+	height: 85px;
+}
+
+
+.bg_color_white{
+	background-color: white;
+}
+
+.projects_top{
+    height: auto;
+    width: 563px;
+    background-color: #ffffff;
+    padding: 0 0 13px 0;
+}
+
+.title_text_2{
+    font: 21px 'Myriad Pro';
+    color: #000000;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 18px;
+    font-weight: bold;
+}
+
+.main_text{
+	font: 15px 'Myriad Pro';
+	color: #000000;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 3px;
+}
+
+.cost{
+	font: 13px 'Myriad Pro';
+    color: #000000;
+    padding-top: 2px;
+}
+
+.cost_2{
+	font: 16px 'Myriad Pro';
+    color: #881934;
+	
+}
+
+.avatar{
+    width: 380px;
+    height: 527px;
+    background-color: #ffffff;
+}
+
+.avatar_img{
+	height: 257px;
+	margin: 13px;
+}
+
+.h_rider_bar{
+    width: 380px;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 17px;
+    padding: 15px 0 12px 0;
+}
+
+.left_side{
+	margin-right: 18px;
+}
+
+
+.h_rider_block{
+	display: flex;
+	margin-bottom: 7px;
+}
+
+.padd_O{
+	padding: 0;
+}
+
+.h_rider_text{
+	padding-top: 14px;
+	padding-left: 14px;
+}
+
+.hor_l{
+	height: 1px;
+    background-color: #e7e8ec;
+    border: none;
+	margin: 20px 0;
+}
+
+.hor_l_2{
+	height: 1px;
+    background-color: #e7e8ec;
+    border: none;
+	margin: 20px;
+}
+
+.h_rider_bar_link{
+    font: 15px 'Myriad Pro';
+	color: #ff0000;
+    display: block;
+    font-weight: bolder;
+	-webkit-animation: h_rider_bar_link 1s linear infinite;
+	animation: h_rider_bar_link 1s linear infinite;
+}
+
+
+@-webkit-keyframes h_rider_bar_link {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+@keyframes h_rider_bar_link {
+  100% { color: rgba(34, 34, 34, 0); }
+}
+
+
+.mar_b_10{
+	margin-bottom: 10px;
+}
+
+.mar_t_10{
+	margin-top: 10px;
+}
+
+.recommended_bar{
+    height: auto;
+    width: 563px;
+    background-color: #ffffff;
+    margin-top: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.column_RC{
+	width: 149px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.pr_info_bar{
+    width: 960px;
+    background-color: #ffffff;
+    margin-top: 17px;
+	display: flex;
+}
+
+.pr_info_left{
+    width: 555px;
+    border-right: 1px solid #e7e8ec;
+    padding: 0 26px 0 0;
+}
+
+.pr_info_title{
+	display:flex; 
+	padding: 20px 0 0 20px;
+}
+
+.pr_info_right{
+    width: 340px;
+    padding: 20px 20px 0 30px;
+}
+
+.pr_curr{
+	display: flex;
+}
+
+#atcoin_freaks{
+	width: 380px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 18px 0 0 0;
+	padding: 0 0 5px 0;
+}
+
+#content_rect_freaks{
+	height: 155px;
+}
+
+#title_rect_freaks{
+	border: none;
+	background-color: #ffffff;
+	padding: 15px 0 0 0;
+	height: 18px;
+}
+
+#projects_title_freaks{
+	padding: 10px 0 0 155px;
+}
+
+#pr_info_bar_CK{
+	padding: 0 0 15px 0;
+}
+
+.photo{
+	margin: 20px 0 0 0;
+}
+
+.gallery_min{
+    height: 63px;
+    margin: -1px;
+}
+
+.gallery_min_t{
+    height: 68px;
+	width: 101px;
+}
+
+.gallery_min_u{
+    height: 68px;
+}
+
+#pr_info_bar_DC{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_DD{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_Reptile{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_HyperCube{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_Medusa{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_vader_CK{
+    padding: 0 0 15px 0;
+}
+
+#price{
+	height: 500px;
+	display: flex;
+}
+
+#pr_info_bar_vader_DC{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_vader_P{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_vader_CD{
+    padding: 0 0 15px 0;
+}
+
+#pr_info_bar_unix_freaks{
+    padding: 0 0 15px 0;
+}
+
+
+.location{
+	height: 25px;
+    width: 360px;
+    background-color: #ffffff;
+    margin: 17px 0 0 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+}
+
+
+#unix_{
+	margin: 25px 0 0 0;
+}
+
+.call_box{
+    height: 88px;
+    width: 338px;
+    position: fixed;
+    display: none;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 0 12px rgba(0,0,0,0.7);
+    z-index: 100499;
+}
+
+
+.call_back_panel{
+	opacity: 0;
+	top: 0;
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	z-index: 100500;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+
+.call_back_panel:hover{
+	box-shadow: 0px 0px 18px rgb(50, 23, 77);
+}
+
+#call{
+	background: url(../img/call.png);
+	transition: all 0.5s;
+}
+
+
+#telegram{
+	background: url(../img/telegram.png);
+	transition: all 1s;
+}
+
+#viber{
+	background: url(../img/viber.png);
+	transition: all 1.5s;
+}
+
+.call_back_panel a{
+	display: block;
+	height: 100%;
+}
+
+.call_text{
+	color: white;
+	font: 18px 'Myriad Pro';
+    font-weight: bold;
+}
+
+.tort_info_top{
+    height: auto;
+    width: 563px;
+    background-color: #ffffff;
+    padding: 0 0 13px 0;
+	margin: 18px 0 0 0;
+}
+
+
+.partners{
+    background-color: #ffffff;
+    height: auto;
+    width: 380px;
+    margin-top: 17px;
+    padding-bottom: 15px;
+}
+
+.td_partners{
+	width: 123px;
+}
+
+.padd_t_15{
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+
+.table_cost{
+	width: 340px;
+	margin-top: 35px;
+}
+
+.table_cost td{
+	padding-bottom: 10px;
+}
+
+.table_cost td img{
+	height: 40px;
+	float: left;
+	margin-top: 8px;
+}
+
+.table_cost td:nth-child(1) p{
+	padding: 20px 0 0 56px;
+}
+
+.table_cost td:nth-child(2) p{
+	padding: 12px 0 0 0px;
+}
+
+.video_local_cont{
+	height: 240px;
+    width: 525px;
+    margin-left: 20px;
+}
+
+.bar_button{
+	height: 50px;
+	width: 100%;
+	background-color: grey;
+}
+
+.fzone{
+    margin-left: 40px;
+    /* margin-top: -12px; */
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.galleryfz_cell{
+	height: 70px;
+	width: 101px;
+}
+
+#atcoin_tort{
+	height: 205px;
+    width: 380px;
+    padding: 0;
+}
+
+.pr_t{
+	margin-top: 17px;
+    width: 960px;
+    background-color: #ffffff;
+}
+
+.marr_O{
+	margin: 0;
+}
+
+#home{
+    top: 110px;
+    left: 1770px;
+    border: 2px solid #3f3f3f;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+	z-index: 100500;
+	position: fixed;
+	transition: box-shadow 0.5s;
+	background-color: #fafafa;
+}
+
+#home:hover{
+	box-shadow: 0 0 12px #3f3f3f;
+}
+
+#home a{
+	height: 100%;
+	display: block;
+}
+
+.fire_text{
+	color: #285473;
+    padding-left: 2px;
+    padding-top: 6px;
+}
+
+.shadows{
+    border: 1px solid #e7e8ec;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.2);
+}
+
+#atcoin_text{
+	padding: 43px 0 0 155px;
+    font: 14px/16px 'Myriad Pro';
+    font-weight: bold;
+}
+
+#tl{
+	height: 1px;
+    width: 210px;
+    background-color: #e7e8ec;
+    display: inline-table;
+}
+
+.back_box{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	z-index: 200000;
+}
+
+.video_box{
+    height: 350px;
+    width: 525px;
+    margin: auto;
+    position: absolute;
+    z-index: 200001;
+    background-color: #ffffff;
+    margin-top: 10%;
+    padding: 0px 10px 10px;
+    text-align: center;
+    top: 7%;
+    left: 34%;
+}
+
+#vid_1,
+#vid_ITw,
+#vid_love,
+#vid_imw,
+#vid_NY,
+#vid_soma,
+#vid_fp,
+#vid_ourst,
+#vid_shest,
+#vid_candls,
+#tort_list_1{display: none;}
+
+#vid_1 a,
+#vid_ITw a,
+#vid_love a,
+#vid_imw a,
+#vid_NY a,
+#vid_soma a,
+#vid_fp a,
+#vid_ourst a,
+#vid_shest a,
+#vid_candls a,
+#tort_list_1 a{
+	display: block;
+	height: 100%;
+}
+
+#csoon{
+	background-image: url(img/skoro.png);
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 615px;
+    left: 300px;
+    -webkit-transform: rotate(-270deg);
+}
+
+.rv_t{
+	margin-left: 20px;
+    border-left: 1px solid #e7e8ec;
+	margin-bottom: 20px;
+}
+
+.hint_button{
+	height: 15px;
+    padding-left: 8px;
+    margin-bottom: -3px;
+	z-index: 200000;
+}
+
+.hint{
+	font: 13px 'Myriad Pro';
+	background-color: #e8e8e8;
+    padding: 5px 5px;
+    position: absolute;
+    width: 150px;
+	display: none;
+}
+
+#hint_PB{
+    left: 750px;
+}
+
+#hint_FH{
+    left: 727px;
+}
+
+#hint_GH{
+    left: 717px;
+}
+
+#hint_DO{
+    left: 707px;
+}
+
+#hint_3F{
+    left: 750px;
+}
+
+#hint_PG{
+    left: 750px;
+}
+
+#hint_PP{
+    left: 750px;
+}
+
+#hint_TT{
+    left: 687px;
+}
+
+#hint_FX{
+    left: 747px;
+}
+
+#hint_PT{
+    left: 707px;
+}
+
+#hint_PF{
+    left: 755px;
+}
+
+#freaks_projects{
+	height: 200px;
+	display: none;
+	/* background:  grey; */
+}
+
+.tort_prog{
+    background: url(img/tort_logo.png);
+    border-radius: 70px;
+    height: 113px;
+    width: 113px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
